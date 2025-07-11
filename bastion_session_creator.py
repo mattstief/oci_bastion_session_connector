@@ -19,15 +19,14 @@ import os
 # Add friendly names and OCIDs for your servers here.
 TARGET_SERVERS = {
     "server1": "ocid1.instance.oc1....",
-    "server2": "ocid1.instance.oc1....",
+    "server2": "ocid1.instance.oc1...."
 }
-
 BASTION_OCID = "ocid1.bastion.oc1...."
 DEFAULT_SSH_USER = ""
-SESSION_TTL_SECONDS = 1800
-
-PRIVATE_KEY_PATH = os.path.expanduser("~/path/to/private_key")
 PUBLIC_KEY_PATH = os.path.expanduser("~/path/to/public_key.pub")
+PRIVATE_KEY_PATH = os.path.expanduser("~/path/to/private_key")
+
+SESSION_TTL_SECONDS = 1800
 # --- End Configuration ---
 
 def read_public_key(path):
