@@ -12,3 +12,12 @@ In the python code, edit values in the --- Configuration --- section
   - Ubuntu default is "ubuntu"
 - PUBLIC_KEY_PATH: replace "~/path/to/public_key.pub" with the path to your public key
 - PRIVATE_KEY_PATH: replace "~/path/to/private_key" with the path to your private key
+
+
+## Python Environment Setup
+To setup a virtual environment and install the requirements:
+
+- python3 -m venv bastion_env
+- source bastion_env/bin/activate
+- pip install -r requirements.txt
+- python3 bastion_session_creator.py
