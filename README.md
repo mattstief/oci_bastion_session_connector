@@ -21,3 +21,5 @@ To setup a virtual environment and install the requirements:
 - source bastion_env/bin/activate
 - pip install -r requirements.txt
 - python3 bastion_session_creator.py
+
+![Demo](./assets/BastionDemo.gif)
