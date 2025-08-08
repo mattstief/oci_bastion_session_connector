@@ -97,6 +97,13 @@ def select_target_server():
     """Prompts the user to select a target server from a numbered list."""
     print("Please select a server to connect to:")
     server_list = list(TARGET_SERVERS.keys())
+
+    # If there's only one server, select it automatically.
+    if len(server_list) == 1:
+        selected_server_name = server_list[0]
+        print(f"--> Auto-selecting the only available server: {selected_server_name}\n")
+        return TARGET_SERVERS[selected_server_name]
+    
     for i, server_name in enumerate(server_list):
         print(f"  {i + 1}: {server_name}")
 
