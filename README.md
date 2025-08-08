@@ -26,3 +26,8 @@ To setup a virtual environment and install the requirements:
 ## Demo
 
 ![Demo](./assets/BastionDemo.gif)
+
+## Troubleshooting
+- Allow ingress on port 22 from the bastion to the instance  
+- Enable the bastion service agent plugin
+   - If enabled after creation, additional configuration is required
